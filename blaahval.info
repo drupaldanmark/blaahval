@@ -1,0 +1,26 @@
+name = Blåhval
+description = Install profile for Drupal Danmark and similar community sites.
+core = 7.x
+dependencies[] = book
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contact
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = forum
+dependencies[] = image
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = openid
+dependencies[] = path
+dependencies[] = profile
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = taxonomy
+dependencies[] = tracker
+files[] = blaahval.profile
+
