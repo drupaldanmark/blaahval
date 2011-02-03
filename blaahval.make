@@ -55,6 +55,9 @@ projects[memcache][version] = "1.0-beta3"
 projects[migrate][subdir] = "contrib"
 projects[migrate][version] = "2.0-beta3"
 
+projects[migrate_extras][subdir] = "contrib"
+projects[migrate_extras][version] = "2.0-beta1"
+
 projects[mollom][subdir] = "contrib"
 projects[mollom][version] = "1.0"
 
