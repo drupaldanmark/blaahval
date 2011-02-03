@@ -1,0 +1,3 @@
+<?php
+
+include_once('blaa_showcase.features.inc');

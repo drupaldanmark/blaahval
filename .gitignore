@@ -1,0 +1,4 @@
+modules/contrib
+themes/contrib
+*.py[co]
+

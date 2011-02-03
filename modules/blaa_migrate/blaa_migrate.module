@@ -1,0 +1,121 @@
+<?php
+
+/**
+ * @file
+ * Migration module. Provides migrations for different parts of the old 
+ * news contents.
+ */
+
+
+/**
+ * Showcase, stage 1.
+ */
+function blaa_migrate_showcase_1() {
+  $showcases = db_query('
+    SELECT * FROM content_type_showcase AS cts
+    INNER JOIN files AS f ON (f.fid = cts.field_primary_image_fid)
+  ');
+
+  foreach ($showcases as $showcase) {
+    $file_uri = str_replace('sites/drupaldanmark.dk/files/', 'public://', $showcase->filepath);
+    
+    // Insert our file into the new structure if not present already.
+    $file_select = db_query('SELECT * FROM {file_managed} WHERE uri = :uri', array(':uri' => $file_uri));
+    if (!$file_select->rowCount()) {
+      $file = file_save((object) array(
+        'filemime' => $showcase->filemime,
+        'filename' => $showcase->filename,
+        'status' => 1,
+        'uid' => $showcase->uid,
+        'uri' => $file_uri,
+      ));
+    }
+    else {
+      // There seem to be no fetchObject, so we cast it manually.
+      $file = (object) $file_select->fetchAssoc();
+    }
+
+    $log_message = 'Upgraded from Drupal 6.';
+
+    $node = node_load($showcase->nid);
+
+    // Check if this node has already been upgraded.
+    if ($node->log != $log_message) {
+      // If not, mark it as such, make a new revision and add a couple of 
+      // fields.
+      $node->log = $log_message;
+      $node->revision = 1;
+
+      $meta = unserialize($showcase->field_primary_image_data);
+
+      $node->field_showcase_images[$node->language][] = (array) $file + $meta;
+      $node->field_showcase_url[$node->language][] = array(
+        'url' => $showcase->field_primary_url_url,
+        'title' => $showcase->field_primary_url_url,
+        'attributes' => array('class' => 'showcase-url'),
+      );
+
+      node_save($node);
+    }
+  }
+}
+
+/**
+ * Showcase, stage 2.
+ */
+function blaa_migrate_showcase_2() {
+  $links = db_query("
+    SELECT cffu.*
+    FROM content_field_flere_urler AS cffu
+    INNER JOIN node AS n ON (n.nid = cffu.nid)
+    WHERE field_flere_urler_url IS NOT NULL AND n.type = 'showcase';
+  ");
+
+  foreach ($links as $link) {
+    $node = node_load($link->nid);
+
+    $node->field_showcase_links[$node->language][] = array(
+      'url' => $link->field_flere_urler_url,
+      'title' => $link->field_flere_urler_title,
+    );
+
+    node_save($node);
+  }
+}
+
+/**
+ * Showcase, stage 3.
+ */
+function blaa_migrate_showcase_3() {
+  $images = db_query('
+    SELECT * FROM content_field_secondary_images AS cfsi
+    INNER JOIN files AS f ON (f.fid = cfsi.field_secondary_images_fid)
+  ');
+
+  foreach ($images as $image) {
+    $file_uri = str_replace('sites/drupaldanmark.dk/files/', 'public://', $image->filepath);
+    
+    // Insert our file into the new structure if not present already.
+    $file_select = db_query('SELECT * FROM {file_managed} WHERE uri = :uri', array(':uri' => $file_uri));
+    if (!$file_select->rowCount()) {
+      $file = file_save((object) array(
+        'filemime' => $image->filemime,
+        'filename' => $image->filename,
+        'status' => 1,
+        'uid' => $image->uid,
+        'uri' => $file_uri,
+      ));
+    }
+    else {
+      // There seem to be no fetchObject, so we cast it manually.
+      $file = (object) $file_select->fetchAssoc();
+    }
+
+    $node = node_load($image->nid);
+    $meta = unserialize($image->field_secondary_images_data);
+    $node->field_showcase_images[$node->language][] = (array) $file + $meta;
+
+    node_save($node);
+  }
+}
+
