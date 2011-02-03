@@ -46,8 +46,8 @@ projects[gravatar][version] = "1.0"
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.0-beta1"
 
-projects[l0n_update][subdir] = "contrib"
-projects[l0n_update][version] = "1.0-alpha3"
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][version] = "1.0-alpha3"
 
 projects[link][subdir] = "contrib"
 ;projects[link][version] = "1.0-alpha2"
