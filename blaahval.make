@@ -31,6 +31,9 @@ projects[context][version] = "3.0-alpha3"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.0-alpha2"
 
+projects[date][subdir] = "contrib"
+projects[date][version] = "1.0-alpha2"
+
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.0-beta1"
 
