@@ -114,16 +114,19 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    160 => '160',
+  );
   $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
-  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Taksonomi: Term';
-  $handler->display->display_options['filters']['tid']['expose']['use_operator'] = FALSE;
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Kategori';
   $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
-  $handler->display->display_options['filters']['tid']['expose']['optional'] = TRUE;
-  $handler->display->display_options['filters']['tid']['expose']['remember'] = FALSE;
-  $handler->display->display_options['filters']['tid']['expose']['single'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['optional'] = 0;
+  $handler->display->display_options['filters']['tid']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'showcase_category';
+  $handler->display->display_options['filters']['tid']['error_message'] = 1;
 
   /* Display: Side */
   $handler = $view->new_display('page', 'Side', 'page_1');
@@ -155,6 +158,9 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    160 => '160',
+  );
   $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Oprindelse';
@@ -185,7 +191,7 @@ function blaa_showcase_views_default_views() {
 
 <a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>'),
     t('Alle'),
-    t('Taksonomi: Term'),
+    t('Kategori'),
     t('Side'),
     t('Oprindelse'),
   );
