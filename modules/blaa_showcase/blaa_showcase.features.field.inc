@@ -149,7 +149,7 @@ function blaa_showcase_field_default_fields() {
   $fields['node-showcase-field_showcase_images'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_showcase_images',
@@ -199,7 +199,7 @@ function blaa_showcase_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_showcase_images',
       'label' => 'Billeder',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
         'alt_field' => 0,
         'file_directory' => '',
@@ -211,6 +211,7 @@ function blaa_showcase_field_default_fields() {
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'image',
         'settings' => array(
           'preview_image_style' => 'thumbnail',
