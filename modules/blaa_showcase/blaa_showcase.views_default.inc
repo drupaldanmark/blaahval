@@ -117,7 +117,6 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['filters']['tid']['value'] = array(
     160 => '160',
   );
-  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Kategori';
   $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
@@ -128,8 +127,8 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'showcase_category';
   $handler->display->display_options['filters']['tid']['error_message'] = 1;
 
-  /* Display: Side */
-  $handler = $view->new_display('page', 'Side', 'page_1');
+  /* Display: Side (Danske) */
+  $handler = $view->new_display('page', 'Side (Danske)', 'page_1');
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['text']['id'] = 'area';
@@ -139,6 +138,18 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['header']['text']['content'] = 'Her er et udpluk af sites lavet i Drupal, som vi kender til.
 
 <a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>';
+  $handler->display->display_options['path'] = 'showcase/dk';
+  $handler->display->display_options['menu']['type'] = 'default tab';
+  $handler->display->display_options['menu']['title'] = 'Danske sites';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'primary-links';
+  $handler->display->display_options['tab_options']['type'] = 'normal';
+  $handler->display->display_options['tab_options']['title'] = 'Showcase';
+  $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['name'] = 'primary-links';
+
+  /* Display: Side (Internationale) */
+  $handler = $view->new_display('page', 'Side (Internationale)', 'page_2');
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter: Indholdselement: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -159,22 +170,21 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    160 => '160',
+    161 => '161',
   );
-  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
-  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Oprindelse';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Kategori';
   $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['optional'] = 0;
   $handler->display->display_options['filters']['tid']['expose']['reduce'] = 0;
   $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'showcase_category';
   $handler->display->display_options['filters']['tid']['error_message'] = 1;
-  $handler->display->display_options['path'] = 'showcase';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Showcase';
+  $handler->display->display_options['path'] = 'showcase/worldwide';
+  $handler->display->display_options['menu']['type'] = 'tab';
+  $handler->display->display_options['menu']['title'] = 'Udenlandske sites';
   $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'primary-links';
   $translatables['showcase'] = array(
     t('Defaults'),
     t('Drupal showcase'),
@@ -192,8 +202,8 @@ function blaa_showcase_views_default_views() {
 <a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>'),
     t('Alle'),
     t('Kategori'),
-    t('Side'),
-    t('Oprindelse'),
+    t('Side (Danske)'),
+    t('Side (Internationale)'),
   );
 
   $views[$view->name] = $view;
