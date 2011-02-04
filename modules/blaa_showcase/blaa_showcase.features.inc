@@ -19,6 +19,28 @@ function blaa_showcase_ctools_plugin_api() {
 function blaa_showcase_image_default_styles() {
   $styles = array();
 
+  // Exported image style: blaa_showcase_full
+  $styles['blaa_showcase_full'] = array(
+    'name' => 'blaa_showcase_full',
+    'effects' => array(
+      '1' => array(
+        'label' => 'Skalér',
+        'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
+        'effect callback' => 'image_scale_effect',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '920',
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: blaa_showcase_thumbnail
   $styles['blaa_showcase_thumbnail'] = array(
     'name' => 'blaa_showcase_thumbnail',

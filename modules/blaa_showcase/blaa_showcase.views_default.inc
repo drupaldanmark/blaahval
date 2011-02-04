@@ -27,9 +27,12 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = 16;
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elementer pr. side';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
+  $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Overskrift: Global: Text area */
+  /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['text']['id'] = 'area';
   $handler->display->display_options['header']['text']['table'] = 'views';
   $handler->display->display_options['header']['text']['field'] = 'area';
@@ -37,7 +40,7 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['header']['text']['content'] = 'Her er et udpluk af sites lavet i Drupal, som vi kender til.
 
 <a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>';
-  /* Field: Fields: field_showcase_images */
+  /* Felt: Felter: field_showcase_images */
   $handler->display->display_options['fields']['entity_id']['id'] = 'entity_id';
   $handler->display->display_options['fields']['entity_id']['table'] = 'field_data_field_showcase_images';
   $handler->display->display_options['fields']['entity_id']['field'] = 'entity_id';
@@ -60,7 +63,7 @@ function blaa_showcase_views_default_views() {
     'image_style' => 'blaa_showcase_thumbnail',
     'image_link' => 'content',
   );
-  /* Field: Indholdselement: Titel */
+  /* Felt: Indholdselement: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -72,7 +75,7 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Sort criterion: Indholdselement: Post date */
+  /* Sorteringskriterie: Indholdselement: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -107,9 +110,60 @@ function blaa_showcase_views_default_views() {
     'showcase' => 'showcase',
   );
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
+  /* Filter: Taksonomi: Term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Taksonomi: Term';
+  $handler->display->display_options['filters']['tid']['expose']['use_operator'] = FALSE;
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['optional'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['remember'] = FALSE;
+  $handler->display->display_options['filters']['tid']['expose']['single'] = TRUE;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'showcase_category';
 
   /* Display: Side */
   $handler = $view->new_display('page', 'Side', 'page_1');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Overskrift: Global: Tekstområde */
+  $handler->display->display_options['header']['text']['id'] = 'area';
+  $handler->display->display_options['header']['text']['table'] = 'views';
+  $handler->display->display_options['header']['text']['field'] = 'area';
+  $handler->display->display_options['header']['text']['empty'] = FALSE;
+  $handler->display->display_options['header']['text']['content'] = 'Her er et udpluk af sites lavet i Drupal, som vi kender til.
+
+<a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>';
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter: Indholdselement: Udgivet */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter: Indholdselement: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'showcase' => 'showcase',
+  );
+  $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
+  /* Filter: Taksonomi: Term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Oprindelse';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'showcase_category';
+  $handler->display->display_options['filters']['tid']['error_message'] = 1;
   $handler->display->display_options['path'] = 'showcase';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Showcase';
@@ -119,19 +173,21 @@ function blaa_showcase_views_default_views() {
     t('Defaults'),
     t('Drupal showcase'),
     t('more'),
-    t('Apply'),
+    t('Udfør'),
     t('Gendan'),
     t('Sort By'),
     t('Asc'),
     t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
+    t('Elementer pr. side'),
+    t('- Alle -'),
+    t('Forskydning'),
     t('Her er et udpluk af sites lavet i Drupal, som vi kender til.
 
 <a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>'),
     t('Alle'),
+    t('Taksonomi: Term'),
     t('Side'),
+    t('Oprindelse'),
   );
 
   $views[$view->name] = $view;
