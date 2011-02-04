@@ -33,13 +33,17 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Overskrift: Global: Tekstområde */
-  $handler->display->display_options['header']['text']['id'] = 'area';
+  $handler->display->display_options['header']['text']['id'] = 'text';
   $handler->display->display_options['header']['text']['table'] = 'views';
   $handler->display->display_options['header']['text']['field'] = 'area';
   $handler->display->display_options['header']['text']['empty'] = FALSE;
-  $handler->display->display_options['header']['text']['content'] = 'Her er et udpluk af sites lavet i Drupal, som vi kender til.
-
-<a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>';
+  $handler->display->display_options['header']['text']['content'] = 'Her er et udpluk af sites lavet i Drupal, som vi kender til.';
+  /* Sidefod: Global: Tekstområde */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['empty'] = TRUE;
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/node/add/showcase">Tilføj ny showcase</a>';
   /* Felt: Felter: field_showcase_images */
   $handler->display->display_options['fields']['entity_id']['id'] = 'entity_id';
   $handler->display->display_options['fields']['entity_id']['table'] = 'field_data_field_showcase_images';
@@ -129,15 +133,6 @@ function blaa_showcase_views_default_views() {
 
   /* Display: Side (Danske) */
   $handler = $view->new_display('page', 'Side (Danske)', 'page_1');
-  $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Overskrift: Global: Tekstområde */
-  $handler->display->display_options['header']['text']['id'] = 'area';
-  $handler->display->display_options['header']['text']['table'] = 'views';
-  $handler->display->display_options['header']['text']['field'] = 'area';
-  $handler->display->display_options['header']['text']['empty'] = FALSE;
-  $handler->display->display_options['header']['text']['content'] = 'Her er et udpluk af sites lavet i Drupal, som vi kender til.
-
-<a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>';
   $handler->display->display_options['path'] = 'showcase/dk';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Danske sites';
@@ -197,9 +192,8 @@ function blaa_showcase_views_default_views() {
     t('Elementer pr. side'),
     t('- Alle -'),
     t('Forskydning'),
-    t('Her er et udpluk af sites lavet i Drupal, som vi kender til.
-
-<a href=/showcase>Danske sites</a> | <a href=/showcase/2>Udenlandske sites</a>'),
+    t('Her er et udpluk af sites lavet i Drupal, som vi kender til.'),
+    t('<a href="/node/add/showcase">Tilføj ny showcase</a>'),
     t('Alle'),
     t('Kategori'),
     t('Side (Danske)'),
