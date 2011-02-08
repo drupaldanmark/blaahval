@@ -49,6 +49,9 @@ projects[google_analytics][version] = "1.1"
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.0-beta1"
 
+projects[memcache][subdir] = "contrib"
+projects[memcache][version] = "1.0-beta3"
+
 projects[l10n_update][subdir] = "contrib"
 projects[l10n_update][version] = "1.0-alpha3"
 
