@@ -43,6 +43,9 @@ projects[features][version] = "1.x-dev"
 projects[gravatar][subdir] = "contrib"
 projects[gravatar][version] = "1.0"
 
+projects[google_analytics][subdir] = "contrib"
+projects[google_analytics][version] = "1.1"
+
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.0-beta1"
 
@@ -92,7 +95,7 @@ projects[views][subdir] = "contrib"
 projects[views][version] = "3.0-alpha1"
 
 projects[xmlsitemap][subdir] = "contrib"
-projects[xmlsitemap][version] = "2.0-beta1"
+projects[xmlsitemap][version] = "2.x-dev"
 
 ; Drupal Danmark theme
 
