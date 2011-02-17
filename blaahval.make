@@ -41,7 +41,7 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "1.x-dev"
 
 projects[gravatar][subdir] = "contrib"
-projects[gravatar][version] = "1.0"
+projects[gravatar][version] = "1.1"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "1.1"
@@ -56,7 +56,7 @@ projects[l10n_update][subdir] = "contrib"
 projects[l10n_update][version] = "1.0-alpha3"
 
 projects[link][subdir] = "contrib"
-;projects[link][version] = "1.0-alpha2"
+projects[link][version] = "1.0-alpha3"
 
 projects[logintoboggan][subdir] = "contrib"
 projects[logintoboggan][version] = "1.1"
@@ -98,7 +98,7 @@ projects[views][subdir] = "contrib"
 projects[views][version] = "3.0-alpha1"
 
 projects[xmlsitemap][subdir] = "contrib"
-projects[xmlsitemap][version] = "2.x-dev"
+projects[xmlsitemap][version] = "2.0-beta2"
 
 ; Drupal Danmark theme
 
