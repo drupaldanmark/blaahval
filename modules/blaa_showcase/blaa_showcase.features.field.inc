@@ -202,7 +202,7 @@ function blaa_showcase_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
-        'file_directory' => '',
+        'file_directory' => 'showcase_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
@@ -214,7 +214,7 @@ function blaa_showcase_field_default_fields() {
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'thumbnail',
+          'preview_image_style' => 'blaa_showcase_thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
