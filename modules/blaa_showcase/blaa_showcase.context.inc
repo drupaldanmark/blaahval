@@ -47,7 +47,6 @@ function blaa_showcase_context_default_contexts() {
   );
   $context->reactions = array(
     'breadcrumb' => 'showcase',
-    'menu' => 'showcase',
   );
   $context->condition_mode = 0;
 
