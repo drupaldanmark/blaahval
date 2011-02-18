@@ -45,7 +45,10 @@ function blaa_showcase_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'breadcrumb' => 'showcase',
+    'menu' => 'showcase',
+  );
   $context->condition_mode = 0;
 
   // Translatables
