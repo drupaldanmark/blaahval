@@ -279,6 +279,18 @@ function blaa_showcase_field_default_fields() {
       'label' => 'Links',
       'required' => 0,
       'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_value' => '',
+        'url' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -347,6 +359,18 @@ function blaa_showcase_field_default_fields() {
       'label' => 'URL',
       'required' => 1,
       'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'none',
+        'title_value' => '',
+        'url' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
