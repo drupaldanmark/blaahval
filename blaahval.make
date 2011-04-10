@@ -26,10 +26,10 @@ projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.0-alpha1"
 
 projects[context][subdir] = "contrib"
-projects[context][version] = "3.0-alpha3"
+projects[context][version] = "3.0-beta1"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.0-alpha2"
+projects[ctools][version] = "1.0-alpha4"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "1.0-alpha2"
@@ -38,13 +38,13 @@ projects[email][subdir] = "contrib"
 projects[email][version] = "1.0-beta1"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.x-dev"
+projects[features][version] = "1.0-beta2"
 
 projects[gravatar][subdir] = "contrib"
 projects[gravatar][version] = "1.1"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "1.1"
+projects[google_analytics][version] = "1.2"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.0-beta1"
@@ -59,7 +59,7 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "1.0-alpha3"
 
 projects[logintoboggan][subdir] = "contrib"
-projects[logintoboggan][version] = "1.1"
+projects[logintoboggan][version] = "1.2"
 
 projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.0-beta3"
@@ -95,7 +95,7 @@ projects[textile][subdir] = "contrib"
 projects[textile][version] = "2.0-rc9"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "3.0-alpha1"
+projects[views][version] = "3.0-beta3"
 
 projects[xmlsitemap][subdir] = "contrib"
 projects[xmlsitemap][version] = "2.0-beta2"
