@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * blaa_showcase.features.inc
+ */
 
 /**
  * Implementation of hook_ctools_plugin_api().
@@ -6,10 +10,21 @@
 function blaa_showcase_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "context" && $api == "context") {
-    return array("version" => 3);
+    return array("version" => "3");
   }
-  elseif ($module == "strongarm" && $api == "strongarm") {
-    return array("version" => 1);
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function blaa_showcase_views_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "views" && $api == "views_default") {
+    return array("version" => "3.0");
   }
 }
 
@@ -23,7 +38,7 @@ function blaa_showcase_image_default_styles() {
   $styles['blaa_showcase_full'] = array(
     'name' => 'blaa_showcase_full',
     'effects' => array(
-      '1' => array(
+      1 => array(
         'label' => 'Skalér',
         'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
         'effect callback' => 'image_scale_effect',
@@ -45,7 +60,7 @@ function blaa_showcase_image_default_styles() {
   $styles['blaa_showcase_thumbnail'] = array(
     'name' => 'blaa_showcase_thumbnail',
     'effects' => array(
-      '2' => array(
+      2 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -60,7 +75,7 @@ function blaa_showcase_image_default_styles() {
         ),
         'weight' => '2',
       ),
-      '3' => array(
+      3 => array(
         'label' => 'Crop',
         'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
         'effect callback' => 'image_crop_effect',
@@ -96,13 +111,4 @@ function blaa_showcase_node_info() {
     ),
   );
   return $items;
-}
-
-/**
- * Implementation of hook_views_api().
- */
-function blaa_showcase_views_api() {
-  return array(
-    'api' => '3.0-alpha1',
-  );
 }

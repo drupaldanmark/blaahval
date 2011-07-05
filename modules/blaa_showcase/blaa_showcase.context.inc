@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * blaa_showcase.context.inc
+ */
 
 /**
  * Implementation of hook_context_default_contexts().

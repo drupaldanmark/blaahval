@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * blaa_showcase.features.field.inc
+ */
 
 /**
  * Implementation of hook_field_default_fields().
@@ -13,12 +17,12 @@ function blaa_showcase_field_default_fields() {
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(
-        '0' => 'node',
+        0 => 'node',
       ),
       'field_name' => 'body',
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -89,13 +93,13 @@ function blaa_showcase_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'showcase_category',
           ),
@@ -107,7 +111,7 @@ function blaa_showcase_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'showcase',
       'default_value' => array(
-        '0' => array(
+        0 => array(
           'tid' => '160',
         ),
       ),
@@ -163,7 +167,7 @@ function blaa_showcase_field_default_fields() {
       ),
       'indexes' => array(
         'fid' => array(
-          '0' => 'fid',
+          0 => 'fid',
         ),
       ),
       'module' => 'image',
@@ -262,9 +266,9 @@ function blaa_showcase_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'link',
+          'module' => NULL,
           'settings' => array(),
-          'type' => 'default',
+          'type' => NULL,
           'weight' => '3',
         ),
         'teaser' => array(
@@ -295,9 +299,9 @@ function blaa_showcase_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'link',
+        'module' => NULL,
         'settings' => array(),
-        'type' => 'link_field',
+        'type' => NULL,
         'weight' => '5',
       ),
     ),
@@ -342,9 +346,9 @@ function blaa_showcase_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'link',
+          'module' => NULL,
           'settings' => array(),
-          'type' => 'default',
+          'type' => NULL,
           'weight' => '0',
         ),
         'teaser' => array(
@@ -375,9 +379,9 @@ function blaa_showcase_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'link',
+        'module' => NULL,
         'settings' => array(),
-        'type' => 'link_field',
+        'type' => NULL,
         'weight' => '2',
       ),
     ),
@@ -393,7 +397,7 @@ function blaa_showcase_field_default_fields() {
       'field_name' => 'upload',
       'indexes' => array(
         'fid' => array(
-          '0' => 'fid',
+          0 => 'fid',
         ),
       ),
       'module' => 'file',
@@ -460,6 +464,17 @@ function blaa_showcase_field_default_fields() {
       ),
     ),
   );
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Beskrivelse');
+  t('Billeder');
+  t('File attachments');
+  t('Flere links relateret til denne showcase – hvem der har lavet det osv.');
+  t('Kategori');
+  t('Links');
+  t('Showcase-sitets adresse.');
+  t('URL');
 
   return $fields;
 }

@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * blaa_showcase.strongarm.inc
+ */
 
 /**
  * Implementation of hook_strongarm().
