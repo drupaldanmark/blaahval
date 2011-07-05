@@ -32,7 +32,7 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-beta1
 
 projects[date][subdir] = contrib
-projects[date][version] = 1.0-alpha3
+projects[date][version] = 2.0-alpha3
 
 projects[email][subdir] = contrib
 projects[email][version] = 1.0-beta1
