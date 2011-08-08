@@ -20,7 +20,7 @@ projects[boxes][subdir] = contrib
 projects[boxes][version] = 1.0-beta4
 
 projects[cache_actions][subdir] = contrib
-projects[cache_actions][version] = 2.0-beta2
+projects[cache_actions][version] = 2.0-alpha2
 
 projects[codefilter][subdir] = contrib
 projects[codefilter][version] = 1.0
@@ -38,7 +38,7 @@ projects[date][subdir] = contrib
 projects[date][version] = 2.0-alpha3
 
 projects[diff][subdir] = contrib
-projects[diff][version] = 2.0-alpha3
+projects[diff][version] = 2.0
 
 projects[email][subdir] = contrib
 projects[email][version] = 1.0-beta1
