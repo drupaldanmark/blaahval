@@ -26,7 +26,7 @@ projects[codefilter][subdir] = contrib
 projects[codefilter][version] = 1.0
 
 projects[comment_notify][subdir] = contrib
-projects[comment_notify][version] = 1.0-alpha1
+projects[comment_notify][version] = 1.0-beta1
 
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta1
