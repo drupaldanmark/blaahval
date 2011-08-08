@@ -5,19 +5,22 @@ core = 7.x
 ; Contrib modules
 
 projects[addressfield][subdir] = contrib
-projects[addressfield][version] = 1.0-alpha4
+projects[addressfield][version] = 1.0-beta1
 
 projects[auto_nodetitle][subdir] = contrib
 projects[auto_nodetitle][version] = 1.0
 
 projects[backup_migrate][subdir] = contrib
-projects[backup_migrate][version] = 2.1
+projects[backup_migrate][version] = 2.2
 
 projects[bot][subdir] = contrib
 projects[bot][version] = 1.3
 
 projects[boxes][subdir] = contrib
-projects[boxes][version] = 1.0-beta3
+projects[boxes][version] = 1.0-beta4
+
+projects[cache_actions][subdir] = contrib
+projects[cache_actions][version] = 2.0-beta2
 
 projects[codefilter][subdir] = contrib
 projects[codefilter][version] = 1.0
@@ -29,13 +32,19 @@ projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta1
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.0-beta1
+projects[ctools][version] = 1.0-rc1
 
 projects[date][subdir] = contrib
 projects[date][version] = 2.0-alpha3
 
+projects[diff][subdir] = contrib
+projects[diff][version] = 2.0-alpha3
+
 projects[email][subdir] = contrib
 projects[email][version] = 1.0-beta1
+
+projects[entity][subdir] = contrib
+projects[entity][version] = 1.0-beta9
 
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta3
@@ -47,10 +56,13 @@ projects[google_analytics][subdir] = contrib
 projects[google_analytics][version] = 1.2
 
 projects[markdown][subdir] = contrib
-projects[markdown][version] = 1.0-beta1
+projects[markdown][version] = 1.0
 
 projects[memcache][subdir] = contrib
-projects[memcache][version] = 1.0-beta3
+projects[memcache][version] = 1.0-beta4
+
+projects[mollom][subdir] = contrib
+projects[mollom][version] = 1.1
 
 projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta2
@@ -61,23 +73,14 @@ projects[link][version] = 1.0-alpha3
 projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.2
 
-projects[memcache][subdir] = contrib
-projects[memcache][version] = 1.0-beta4
-
-projects[migrate][subdir] = contrib
-projects[migrate][version] = 2.0-beta3
-
-projects[migrate_extras][subdir] = contrib
-projects[migrate_extras][version] = 2.0-beta1
-
-projects[mollom][subdir] = contrib
-projects[mollom][version] = 1.0
-
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0-rc2
 
 projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-beta3
+
+projects[rules][subdir] = contrib
+projects[rules][version] = 2.0-beta2
 
 projects[spamspan][subdir] = contrib
 projects[spamspan][version] = 1.1-beta1
@@ -86,7 +89,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta2
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta2
+projects[token][version] = 1.0-beta3
 
 projects[transliteration][subdir] = contrib
 projects[transliteration][version] = 3.0-alpha1
