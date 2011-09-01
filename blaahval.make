@@ -20,7 +20,7 @@ projects[boxes][subdir] = contrib
 projects[boxes][version] = 1.0-beta4
 
 projects[cache_actions][subdir] = contrib
-projects[cache_actions][version] = 2.0-alpha2
+projects[cache_actions][version] = 2.0-alpha3
 
 projects[codefilter][subdir] = contrib
 projects[codefilter][version] = 1.0
@@ -35,16 +35,16 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
 projects[date][subdir] = contrib
-projects[date][version] = 2.0-alpha3
+projects[date][version] = 2.0-alpha4
 
 projects[diff][subdir] = contrib
 projects[diff][version] = 2.0
 
 projects[email][subdir] = contrib
-projects[email][version] = 1.0-beta1
+projects[email][version] = 1.0
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.0-beta9
+projects[entity][version] = 1.0-beta10
 
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta3
@@ -80,7 +80,7 @@ projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-beta3
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.0-beta2
+projects[rules][version] = 2.0-rc1
 
 projects[spamspan][subdir] = contrib
 projects[spamspan][version] = 1.1-beta1
@@ -89,7 +89,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta2
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta3
+projects[token][version] = 1.0-beta5
 
 projects[transliteration][subdir] = contrib
 projects[transliteration][version] = 3.0-alpha1
