@@ -67,6 +67,9 @@ projects[memcache][version] = 1.0-beta4
 projects[mollom][subdir] = contrib
 projects[mollom][version] = 1.1
 
+projects[job_scheduler][subdir] = contrib
+projects[job_scheduler][version] = 2.0-alpha2
+
 projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta2
 
