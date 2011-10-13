@@ -49,6 +49,9 @@ projects[entity][version] = 1.0-beta10
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta4
 
+projects[feeds][subdir] = contrib
+projects[feeds][version] = 2.0-alpha4
+
 projects[gravatar][subdir] = contrib
 projects[gravatar][version] = 1.1
 
