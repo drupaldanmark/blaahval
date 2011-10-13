@@ -5,7 +5,7 @@ core = 7.x
 ; Contrib modules
 
 projects[addressfield][subdir] = contrib
-projects[addressfield][version] = 1.0-beta1
+projects[addressfield][version] = 1.0-beta2
 
 projects[auto_nodetitle][subdir] = contrib
 projects[auto_nodetitle][version] = 1.0
@@ -17,7 +17,7 @@ projects[bot][subdir] = contrib
 projects[bot][version] = 1.3
 
 projects[boxes][subdir] = contrib
-projects[boxes][version] = 1.0-beta4
+projects[boxes][version] = 1.0-beta6
 
 projects[cache_actions][subdir] = contrib
 projects[cache_actions][version] = 2.0-alpha3
@@ -29,7 +29,7 @@ projects[comment_notify][subdir] = contrib
 projects[comment_notify][version] = 1.0-beta1
 
 projects[context][subdir] = contrib
-projects[context][version] = 3.0-beta1
+projects[context][version] = 3.0-beta2
 
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
@@ -47,7 +47,7 @@ projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-beta10
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta3
+projects[features][version] = 1.0-beta4
 
 projects[gravatar][subdir] = contrib
 projects[gravatar][version] = 1.1
@@ -68,7 +68,7 @@ projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta2
 
 projects[link][subdir] = contrib
-projects[link][version] = 1.0-alpha3
+projects[link][version] = 1.0-beta1
 
 projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.2
@@ -80,16 +80,16 @@ projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-beta3
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.0-rc1
+projects[rules][version] = 2.0
 
 projects[spamspan][subdir] = contrib
 projects[spamspan][version] = 1.1-beta1
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-beta2
+projects[strongarm][version] = 2.0-beta3
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta5
+projects[token][version] = 1.0-beta6
 
 projects[transliteration][subdir] = contrib
 projects[transliteration][version] = 3.0-alpha1
