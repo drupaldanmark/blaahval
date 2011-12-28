@@ -1,6 +1,7 @@
 ; Drupal core
 api = 2
 core = 7.x
+projects[] = drupal
 
 ; Contrib modules
 
@@ -35,7 +36,7 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
 projects[date][subdir] = contrib
-projects[date][version] = 2.0-alpha4
+projects[date][version] = 2.0-rc2
 
 projects[diff][subdir] = contrib
 projects[diff][version] = 2.0
@@ -44,10 +45,10 @@ projects[email][subdir] = contrib
 projects[email][version] = 1.0
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.0-beta10
+projects[entity][version] = 1.0-rc1
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta4
+projects[features][version] = 1.0-beta5
 
 projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
@@ -74,16 +75,19 @@ projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta2
 
 projects[link][subdir] = contrib
-projects[link][version] = 1.0-beta1
+projects[link][version] = 1.0
 
 projects[logintoboggan][subdir] = contrib
-projects[logintoboggan][version] = 1.2
+projects[logintoboggan][version] = 1.3
+
+projects[memcache][subdir] = contrib
+projects[memcache][version] = 1.0-rc2
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 1.0-rc2
+projects[pathauto][version] = 1.0
 
 projects[redirect][subdir] = contrib
-projects[redirect][version] = 1.0-beta3
+projects[redirect][version] = 1.0-beta4
 
 projects[rules][subdir] = contrib
 projects[rules][version] = 2.0
@@ -92,22 +96,22 @@ projects[spamspan][subdir] = contrib
 projects[spamspan][version] = 1.1-beta1
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-beta3
+projects[strongarm][version] = 2.0-beta5
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta6
+projects[token][version] = 1.0-beta7
 
 projects[transliteration][subdir] = contrib
-projects[transliteration][version] = 3.0-alpha1
+projects[transliteration][version] = 3.0
 
 projects[textile][subdir] = contrib
 projects[textile][version] = 2.0-rc9
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.0-rc1
+projects[views][version] = 3.0
 
 projects[xmlsitemap][subdir] = contrib
-projects[xmlsitemap][version] = 2.0-beta3
+projects[xmlsitemap][version] = 2.0-rc1
 
 ; Drupal Danmark theme
 
