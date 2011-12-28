@@ -36,7 +36,7 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
 projects[date][subdir] = contrib
-projects[date][version] = 2.0-rc2
+projects[date][version] = 2.0-rc1
 
 projects[diff][subdir] = contrib
 projects[diff][version] = 2.0
