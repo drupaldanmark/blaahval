@@ -18,7 +18,7 @@ projects[bot][subdir] = contrib
 projects[bot][version] = 1.3
 
 projects[boxes][subdir] = contrib
-projects[boxes][version] = 1.0-beta6
+projects[boxes][version] = 1.0-beta7
 
 projects[cache_actions][subdir] = contrib
 projects[cache_actions][version] = 2.0-alpha3
@@ -36,7 +36,7 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
 projects[date][subdir] = contrib
-projects[date][version] = 2.0-rc1
+projects[date][version] = 2.0-rc2
 
 projects[diff][subdir] = contrib
 projects[diff][version] = 2.0
@@ -48,7 +48,7 @@ projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-rc1
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta5
+projects[features][version] = 1.0-beta6
 
 projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
@@ -81,7 +81,7 @@ projects[logintoboggan][subdir] = contrib
 projects[logintoboggan][version] = 1.3
 
 projects[memcache][subdir] = contrib
-projects[memcache][version] = 1.0-rc2
+projects[memcache][version] = 1.0
 
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0
@@ -99,7 +99,7 @@ projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta5
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta7
+projects[token][version] = 1.0-rc1
 
 projects[transliteration][subdir] = contrib
 projects[transliteration][version] = 3.0
@@ -108,7 +108,7 @@ projects[textile][subdir] = contrib
 projects[textile][version] = 2.0-rc9
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.0
+projects[views][version] = 3.1
 
 projects[xmlsitemap][subdir] = contrib
 projects[xmlsitemap][version] = 2.0-rc1
