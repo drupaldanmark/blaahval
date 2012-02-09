@@ -1,0 +1,7 @@
+name = "Blaa tags"
+description = "Tags for content"
+core = "7.x"
+package = "Features"
+dependencies[] = "features"
+dependencies[] = "taxonomy"
+features[taxonomy][] = "blaa_tags"
