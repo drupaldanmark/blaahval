@@ -32,6 +32,9 @@ projects[comment_notify][version] = 1.0-beta1
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta2
 
+projects[context_inline_editor][subdir] = "contrib"
+projects[context_inline_editor][version] = "1.0-beta1"
+
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
@@ -58,6 +61,9 @@ projects[gravatar][version] = 1.1
 
 projects[google_analytics][subdir] = contrib
 projects[google_analytics][version] = 1.2
+
+projects[html5_tools][subdir] = contrib
+projects[html5_tools][version] = 1.1
 
 projects[markdown][subdir] = contrib
 projects[markdown][version] = 1.0
@@ -115,7 +121,15 @@ projects[xmlsitemap][version] = 2.0-rc1
 
 ; Drupal Danmark theme
 
-projects[kaskelot][download][type] = git
-projects[kaskelot][download][url] = https://github.com/drupaldanmark/kaskelot.git
-projects[kaskelot][type] = theme
+
+projects[kaskelot][download][type] = "git"
+projects[kaskelot][download][url] = "https://github.com/drupaldanmark/kaskelot.git"
+projects[kaskelot][type] = "theme"
+
+projects[mobydick][download][type] = "git"
+projects[mobydick][download][url] = "https://github.com/drupaldanmark/mobydick.git"
+projects[mobydick][type] = "theme"
+
+projects[mothership][subdir] = "contrib"
+projects[mothership][version] = "2.x-dev"
 
