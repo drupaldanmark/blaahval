@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_default_views().
+ * Implements hook_views_default_views().
  */
 function blaa_showcase_views_default_views() {
   $export = array();
@@ -17,7 +17,7 @@ function blaa_showcase_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'Drupal site showcase';
   $view->core = 0;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Defaults */

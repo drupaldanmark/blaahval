@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_ctools_plugin_api().
+ * Implements hook_ctools_plugin_api().
  */
 function blaa_showcase_ctools_plugin_api() {
   list($module, $api) = func_get_args();
@@ -19,7 +19,7 @@ function blaa_showcase_ctools_plugin_api() {
 }
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
 function blaa_showcase_views_api() {
   list($module, $api) = func_get_args();
@@ -29,7 +29,7 @@ function blaa_showcase_views_api() {
 }
 
 /**
- * Implementation of hook_image_default_styles().
+ * Implements hook_image_default_styles().
  */
 function blaa_showcase_image_default_styles() {
   $styles = array();
@@ -42,6 +42,7 @@ function blaa_showcase_image_default_styles() {
         'label' => 'Skalér',
         'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
         'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
         'form callback' => 'image_scale_form',
         'summary theme' => 'image_scale_summary',
         'module' => 'image',
@@ -64,6 +65,7 @@ function blaa_showcase_image_default_styles() {
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
         'form callback' => 'image_scale_form',
         'summary theme' => 'image_scale_summary',
         'module' => 'image',
@@ -79,6 +81,7 @@ function blaa_showcase_image_default_styles() {
         'label' => 'Crop',
         'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
         'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_crop_form',
         'summary theme' => 'image_crop_summary',
         'module' => 'image',
@@ -97,7 +100,7 @@ function blaa_showcase_image_default_styles() {
 }
 
 /**
- * Implementation of hook_node_info().
+ * Implements hook_node_info().
  */
 function blaa_showcase_node_info() {
   $items = array(

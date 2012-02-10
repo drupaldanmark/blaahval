@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_strongarm().
+ * Implements hook_strongarm().
  */
 function blaa_showcase_strongarm() {
   $export = array();
@@ -83,11 +83,39 @@ function blaa_showcase_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_showcase';
+  $strongarm->value = array();
+  $export['menu_options_showcase'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_showcase';
+  $strongarm->value = 'admin:0';
+  $export['menu_parent_showcase'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_showcase';
   $strongarm->value = array(
     0 => 'status',
   );
   $export['node_options_showcase'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_showcase';
+  $strongarm->value = '1';
+  $export['node_preview_showcase'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_showcase';
+  $strongarm->value = 1;
+  $export['node_submitted_showcase'] = $strongarm;
 
   return $export;
 }

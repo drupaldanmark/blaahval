@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function blaa_showcase_field_default_fields() {
   $fields = array();
@@ -252,6 +252,7 @@ function blaa_showcase_field_default_fields() {
         'rel' => '',
         'target' => 'default',
         'title' => 'required',
+        'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
       ),
@@ -273,8 +274,9 @@ function blaa_showcase_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'above',
+          'module' => 'link',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'link_default',
           'weight' => 0,
         ),
       ),
@@ -293,15 +295,17 @@ function blaa_showcase_field_default_fields() {
         ),
         'enable_tokens' => 1,
         'title' => 'optional',
+        'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
         'user_register_form' => FALSE,
+        'validate_url' => 1,
       ),
       'widget' => array(
         'active' => 0,
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_field',
         'weight' => '5',
       ),
     ),
@@ -332,6 +336,7 @@ function blaa_showcase_field_default_fields() {
         'rel' => '',
         'target' => 'default',
         'title' => 'none',
+        'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
       ),
@@ -353,8 +358,9 @@ function blaa_showcase_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'above',
+          'module' => 'link',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'link_default',
           'weight' => 0,
         ),
       ),
@@ -373,15 +379,17 @@ function blaa_showcase_field_default_fields() {
         ),
         'enable_tokens' => 1,
         'title' => 'none',
+        'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
         'user_register_form' => FALSE,
+        'validate_url' => 1,
       ),
       'widget' => array(
         'active' => 0,
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_field',
         'weight' => '2',
       ),
     ),
