@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Blaa articles feature.
+ */
+
+include_once('blaa_articles.features.inc');
