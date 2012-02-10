@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Blaa members feature.
+ */
+
+include_once('blaa_members.features.inc');
