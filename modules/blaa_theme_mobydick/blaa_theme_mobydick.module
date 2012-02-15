@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the blaa theme mobydick feature.
+ */
+
+include_once('blaa_theme_mobydick.features.inc');
