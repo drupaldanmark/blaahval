@@ -19,12 +19,18 @@ function blaa_showcase_context_default_contexts() {
   $context->conditions = array(
     'views' => array(
       'values' => array(
-        'showcase' => 'showcase',
-        'showcase:page_1' => 'showcase:page_1',
+        'blaa_showcase' => 'blaa_showcase',
+        'blaa_showcase:page_dk' => 'blaa_showcase:page_dk',
+        'blaa_showcase:page_int' => 'blaa_showcase:page_int',
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'menu' => 'showcase',
+    'theme_html' => array(
+      'class' => 'onecolumn',
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
@@ -51,6 +57,10 @@ function blaa_showcase_context_default_contexts() {
   );
   $context->reactions = array(
     'breadcrumb' => 'showcase',
+    'menu' => 'showcase',
+    'theme_html' => array(
+      'class' => 'onecolumn',
+    ),
   );
   $context->condition_mode = 0;
 

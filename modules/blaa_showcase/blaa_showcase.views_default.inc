@@ -22,7 +22,7 @@ function blaa_showcase_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Drupal showcase';
+  $handler->display->display_options['title'] = 'Bygget på Drupal';
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -32,12 +32,19 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér på';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = 16;
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elementer pr. side';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
   $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
-  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['class'] = 'shadow';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 0;
   /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['text']['id'] = 'text';
   $handler->display->display_options['header']['text']['table'] = 'views';
@@ -61,25 +68,28 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['fields']['entity_id_1']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['alter']['external'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['entity_id_1']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['entity_id_1']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['entity_id_1']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['entity_id_1']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['entity_id_1']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['entity_id_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['entity_id_1']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['hide_empty'] = 1;
   $handler->display->display_options['fields']['entity_id_1']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['entity_id_1']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['entity_id_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['entity_id_1']['settings'] = array(
-    'image_style' => 'blaa_showcase_thumbnail',
+    'image_style' => 'mobydick-showcase-medium',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['entity_id_1']['group_rows'] = 1;
   $handler->display->display_options['fields']['entity_id_1']['delta_limit'] = '1';
   $handler->display->display_options['fields']['entity_id_1']['delta_offset'] = '0';
   $handler->display->display_options['fields']['entity_id_1']['delta_reversed'] = 0;
+  $handler->display->display_options['fields']['entity_id_1']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['entity_id_1']['field_api_classes'] = 0;
   /* Felt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -90,15 +100,21 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h4';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -200,9 +216,24 @@ function blaa_showcase_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Udenlandske sites';
   $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Blok */
+  $handler = $view->new_display('block', 'Blok', 'block_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sorteringskriterie: Global: Tilfældig */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
+  $handler->display->display_options['block_description'] = 'Drupal Sites';
   $translatables['blaa_showcase'] = array(
     t('Defaults'),
-    t('Drupal showcase'),
+    t('Bygget på Drupal'),
     t('more'),
     t('Udfør'),
     t('Gendan'),
@@ -218,6 +249,8 @@ function blaa_showcase_views_default_views() {
     t('Kategori'),
     t('Side (Danske)'),
     t('Side (Internationale)'),
+    t('Blok'),
+    t('Drupal Sites'),
   );
   $export['blaa_showcase'] = $view;
 

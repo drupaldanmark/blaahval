@@ -34,11 +34,11 @@ function blaa_showcase_views_api() {
 function blaa_showcase_image_default_styles() {
   $styles = array();
 
-  // Exported image style: blaa_showcase_full
-  $styles['blaa_showcase_full'] = array(
-    'name' => 'blaa_showcase_full',
+  // Exported image style: mobydick-showcase-full
+  $styles['mobydick-showcase-full'] = array(
+    'name' => 'mobydick-showcase-full',
     'effects' => array(
-      1 => array(
+      15 => array(
         'label' => 'Skalér',
         'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
         'effect callback' => 'image_scale_effect',
@@ -48,22 +48,22 @@ function blaa_showcase_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '920',
+          'width' => '960',
           'height' => '',
-          'upscale' => 0,
+          'upscale' => 1,
         ),
         'weight' => '1',
       ),
     ),
   );
 
-  // Exported image style: blaa_showcase_thumbnail
-  $styles['blaa_showcase_thumbnail'] = array(
-    'name' => 'blaa_showcase_thumbnail',
+  // Exported image style: mobydick-showcase-large
+  $styles['mobydick-showcase-large'] = array(
+    'name' => 'mobydick-showcase-large',
     'effects' => array(
-      2 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+      14 => array(
+        'label' => 'Skalér',
+        'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
         'effect callback' => 'image_scale_effect',
         'dimensions callback' => 'image_scale_dimensions',
         'form callback' => 'image_scale_form',
@@ -71,15 +71,38 @@ function blaa_showcase_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '220',
+          'width' => '720',
           'height' => '',
-          'upscale' => 0,
+          'upscale' => 1,
         ),
-        'weight' => '2',
+        'weight' => '1',
       ),
-      3 => array(
-        'label' => 'Crop',
-        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+    ),
+  );
+
+  // Exported image style: mobydick-showcase-medium
+  $styles['mobydick-showcase-medium'] = array(
+    'name' => 'mobydick-showcase-medium',
+    'effects' => array(
+      13 => array(
+        'label' => 'Skalér',
+        'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '600',
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => '-10',
+      ),
+      12 => array(
+        'label' => 'Beskær',
+        'help' => 'Beskæring fjerner dele af billedet for at give det de angivne dimensioner.',
         'effect callback' => 'image_crop_effect',
         'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_crop_form',
@@ -87,11 +110,11 @@ function blaa_showcase_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '220',
-          'height' => '138',
-          'anchor' => 'center-top',
+          'width' => '210',
+          'height' => '140',
+          'anchor' => 'left-top',
         ),
-        'weight' => '2',
+        'weight' => '-9',
       ),
     ),
   );

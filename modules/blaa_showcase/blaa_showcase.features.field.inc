@@ -45,13 +45,9 @@ function blaa_showcase_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'trim_length' => '200',
-          'type' => 'text_summary_or_trimmed',
-          'weight' => 1,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
@@ -122,14 +118,14 @@ function blaa_showcase_field_default_fields() {
           'label' => 'above',
           'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 5,
+          'type' => 'taxonomy_term_reference_plain',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'node',
@@ -188,22 +184,26 @@ function blaa_showcase_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'blaa_showcase_full',
+            'image_style' => 'mobydick-showcase-large',
           ),
           'type' => 'image',
           'weight' => '4',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => 'mobydick-showcase-medium',
+          ),
+          'type' => 'image',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_showcase_images',
       'label' => 'Billeder',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 0,
         'file_directory' => 'showcase_images',
@@ -211,14 +211,14 @@ function blaa_showcase_field_default_fields() {
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'blaa_showcase_thumbnail',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
@@ -267,17 +267,16 @@ function blaa_showcase_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => NULL,
+          'module' => 'link',
           'settings' => array(),
-          'type' => NULL,
+          'type' => 'link_default',
           'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
-          'module' => 'link',
           'settings' => array(),
-          'type' => 'link_default',
-          'weight' => 0,
+          'type' => 'hidden',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'node',
@@ -351,17 +350,16 @@ function blaa_showcase_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => NULL,
+          'module' => 'link',
           'settings' => array(),
-          'type' => NULL,
+          'type' => 'link_default',
           'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
-          'module' => 'link',
           'settings' => array(),
-          'type' => 'link_default',
-          'weight' => 0,
+          'type' => 'hidden',
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'node',
@@ -391,6 +389,90 @@ function blaa_showcase_field_default_fields() {
         'settings' => array(),
         'type' => 'link_field',
         'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-showcase-field_showcase_user'
+  $fields['node-showcase-field_showcase_user'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_showcase_user',
+      'foreign keys' => array(
+        'uid' => array(
+          'columns' => array(
+            'uid' => 'uid',
+          ),
+          'table' => 'users',
+        ),
+      ),
+      'indexes' => array(
+        'uid' => array(
+          0 => 'uid',
+        ),
+      ),
+      'module' => 'user_reference',
+      'settings' => array(
+        'referenceable_roles' => array(
+          2 => 0,
+          5 => 0,
+          6 => 0,
+          7 => 0,
+          8 => '8',
+        ),
+        'referenceable_status' => array(
+          0 => 0,
+          1 => '1',
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'user_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'showcase',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'user_reference',
+          'settings' => array(),
+          'type' => 'user_reference_default',
+          'weight' => '6',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_showcase_user',
+      'label' => 'Brugere',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'user_reference',
+        'settings' => array(
+          'autocomplete_match' => 'contains',
+          'autocomplete_path' => 'user_reference/autocomplete',
+          'size' => '60',
+        ),
+        'type' => 'user_reference_autocomplete',
+        'weight' => '6',
       ),
     ),
   );
@@ -445,10 +527,9 @@ function blaa_showcase_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'module' => NULL,
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '5',
         ),
       ),
       'entity_type' => 'node',
@@ -468,7 +549,7 @@ function blaa_showcase_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -477,6 +558,7 @@ function blaa_showcase_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Beskrivelse');
   t('Billeder');
+  t('Brugere');
   t('File attachments');
   t('Flere links relateret til denne showcase – hvem der har lavet det osv.');
   t('Kategori');
