@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the blaa Forum feature.
+ */
+
+include_once('blaa_forum.features.inc');
