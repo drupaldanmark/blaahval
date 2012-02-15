@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Blaa calendar feature.
+ */
+
+include_once('blaa_calendar.features.inc');
