@@ -56,41 +56,23 @@ function blaa_forum_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'user-new' => array(
-          'module' => 'user',
-          'delta' => 'new',
-          'region' => 'sidebar_first',
-          'weight' => 0,
-        ),
         'views-events-block' => array(
           'module' => 'views',
           'delta' => 'events-block',
           'region' => 'sidebar_first',
-          'weight' => 1,
-        ),
-        'user-online' => array(
-          'module' => 'user',
-          'delta' => 'online',
-          'region' => 'sidebar_first',
-          'weight' => 2,
+          'weight' => 0,
         ),
         'system-user-menu' => array(
           'module' => 'system',
           'delta' => 'user-menu',
           'region' => 'sidebar_first',
-          'weight' => 3,
+          'weight' => 1,
         ),
         'comment-recent' => array(
           'module' => 'comment',
           'delta' => 'recent',
           'region' => 'sidebar_first',
-          'weight' => 4,
-        ),
-        'node-recent' => array(
-          'module' => 'node',
-          'delta' => 'recent',
-          'region' => 'sidebar_first',
-          'weight' => 5,
+          'weight' => 2,
         ),
       ),
     ),

@@ -37,7 +37,15 @@ function blaa_theme_mobydick_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<h2> Drupal Danmark</h2>
-<p>content bla bla bla  i rawk a lods content bla bla bla  i rawk a lodscontent bla bla bla  i rawk a lodscontent bla bla bla  i rawk a lods </p>',
+<p>content bla bla bla  i rawk a lods content bla bla bla  i rawk a lodscontent bla bla bla  i rawk a lodscontent bla bla bla  i rawk a lods </p>
+<h3>Nedlad den danske sprogpakke</h3>
+<p>
+<a href="#">download</a> pakken så alt kommer på dansk
+</p>
+<a href="#" class="cupid-green">Download Drupal 7.12</a>
+<p>
+DEn er ny og lækker og sån lige til at fyre op i se evt vores guide her 
+</p>',
       'format' => '3',
     ),
     'additional_classes' => 'rockstar',
@@ -53,7 +61,9 @@ function blaa_theme_mobydick_default_box() {
   $box->description = 'test';
   $box->options = array(
     'body' => array(
-      'value' => 'lets go',
+      'value' => 'opret forum
+opret showcase
+tip en nyhed',
       'format' => '1',
     ),
     'additional_classes' => 'foobar',

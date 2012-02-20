@@ -50,23 +50,11 @@ function blaa_theme_mobydick_context_default_contexts() {
           'region' => 'fourth_2column',
           'weight' => 0,
         ),
-        'block-2' => array(
-          'module' => 'block',
-          'delta' => '2',
-          'region' => 'fourth_2column',
-          'weight' => 1,
-        ),
         'views-artikler-block' => array(
           'module' => 'views',
           'delta' => 'artikler-block',
           'region' => 'fourth_3column',
           'weight' => 0,
-        ),
-        'boxes-become_member' => array(
-          'module' => 'boxes',
-          'delta' => 'become_member',
-          'region' => 'fourth_3column',
-          'weight' => 1,
         ),
         'comment-recent' => array(
           'module' => 'comment',
@@ -74,17 +62,11 @@ function blaa_theme_mobydick_context_default_contexts() {
           'region' => 'fourth_4column',
           'weight' => 0,
         ),
-        'block-8' => array(
-          'module' => 'block',
-          'delta' => '8',
-          'region' => 'fourth_4column',
-          'weight' => 1,
-        ),
         'boxes-box-7f748b03' => array(
           'module' => 'boxes',
           'delta' => 'box-7f748b03',
           'region' => 'footer_1column',
-          'weight' => 0,
+          'weight' => 2,
         ),
         'block-4' => array(
           'module' => 'block',
@@ -103,6 +85,12 @@ function blaa_theme_mobydick_context_default_contexts() {
           'delta' => 'navigation',
           'region' => 'footer_4column',
           'weight' => 0,
+        ),
+        'boxes-become_member' => array(
+          'module' => 'boxes',
+          'delta' => 'become_member',
+          'region' => 'footer_4column',
+          'weight' => 1,
         ),
       ),
     ),

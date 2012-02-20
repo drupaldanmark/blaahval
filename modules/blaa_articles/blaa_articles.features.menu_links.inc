@@ -1,32 +1,32 @@
 <?php
 /**
  * @file
- * blaa_menu.features.menu_links.inc
+ * blaa_articles.features.menu_links.inc
  */
 
 /**
  * Implements hook_menu_default_menu_links().
  */
-function blaa_menu_menu_default_menu_links() {
+function blaa_articles_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:forum
-  $menu_links['main-menu:forum'] = array(
+  // Exported menu link: main-menu:nyheder
+  $menu_links['main-menu:nyheder'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'forum',
-    'router_path' => 'forum',
-    'link_title' => 'Forum',
+    'link_path' => 'nyheder',
+    'router_path' => 'nyheder',
+    'link_title' => 'Nyheder',
     'options' => array(),
     'module' => 'system',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '-50',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Forum');
+  t('Nyheder');
 
 
   return $menu_links;
