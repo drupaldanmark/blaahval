@@ -148,13 +148,13 @@ function blaa_calendar_field_default_fields() {
         'active' => 1,
         'module' => 'date',
         'settings' => array(
-          'display_all_day' => 0,
+          'display_all_day' => 1,
           'increment' => '15',
-          'input_format' => 'd.m.Y - H:i:s',
+          'input_format' => 'Y-m-d H:i:s',
           'input_format_custom' => '',
           'label_position' => 'above',
           'text_parts' => array(),
-          'year_range' => '-3:+3',
+          'year_range' => '-5:+3',
         ),
         'type' => 'date_popup',
         'weight' => '1',
@@ -474,7 +474,7 @@ function blaa_calendar_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'vocabulary_5',
+            'vocabulary' => 'blaa_calendar_event_type',
             'parent' => 0,
           ),
         ),
@@ -536,7 +536,7 @@ function blaa_calendar_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'vocabulary_6',
+            'vocabulary' => 'blaa_calendar_event_location',
             'parent' => 0,
           ),
         ),
