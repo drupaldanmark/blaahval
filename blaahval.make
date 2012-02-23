@@ -92,11 +92,17 @@ projects[logintoboggan][version] = 1.3
 projects[memcache][subdir] = contrib
 projects[memcache][version] = 1.0
 
+projects[menu_block][subdir] = contrib
+projects[menu_block][version] = 2.3
+
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0
 
 projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-beta4
+
+projects[references][subdir] = contrib
+projects[references][version] = 2.0
 
 projects[rules][subdir] = contrib
 projects[rules][version] = 2.0
