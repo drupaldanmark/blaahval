@@ -1,5 +1,5 @@
-name = "blaa menu"
-description = "menu"
+name = "Blaa menu"
+description = "Main site menu"
 core = "7.x"
 package = "Features"
 php = "5.2.4"

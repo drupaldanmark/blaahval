@@ -1,5 +1,5 @@
-name = "blaa theme mobydick"
-description = "settings for theme"
+name = "Blaa theme Mobydick"
+description = "Settings and configuration for the Mobydick theme"
 core = "7.x"
 package = "Features"
 php = "5.2.4"

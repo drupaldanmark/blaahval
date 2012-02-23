@@ -1,5 +1,5 @@
-name = "blaa Forum"
-description = "Forummer"
+name = "Blaa forum"
+description = "Forum configuration."
 core = "7.x"
 package = "Features"
 php = "5.2.4"
