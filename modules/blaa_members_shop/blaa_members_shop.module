@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file Integration with Drupal Commerce to create custom product types and
+ * the like.
+ */
+
+/**
+ * Implements hook_commerce_product_type_info().
+ */
+function blaa_members_shop_commerce_product_type_info() {
+  return array(
+    'blaa_membership' => array(
+      'type' => 'blaa_membership',
+      'name' => t('Membership'),
+      'description' => t('Used for selling membership for Drupal Danmark organization.'),
+    ),
+  );
+}
