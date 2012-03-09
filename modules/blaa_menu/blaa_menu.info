@@ -1,5 +1,5 @@
-name = "Blaa menu"
-description = "Main site menu"
+name = "Menu"
+description = "Main site menu for Drupal Danmark"
 core = "7.x"
 package = "Features"
 php = "5.2.4"

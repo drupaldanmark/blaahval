@@ -1,4 +1,4 @@
-name = Blaa migrate
+name = Migrate
 package = Blaa
 core = 7.x
 description = Handle migration of content from the old Drupal Danmark site.
