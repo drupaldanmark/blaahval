@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file Configuration of Drupal Commerce for Drupal Danmark.
+ */
+
+/**
+ * Implements hook_commerce_tax_rate_info().
+ */
+function blaa_shop_commerce_tax_rate_info() {
+  // Define the Danish sales tax.
+  $tax_rates = array();
+
+  $tax_rates['moms'] = array(
+    'title' => t('Moms tax'),
+    'rate' => 0.25,
+    'type' => 'sales_tax',
+    'admin_list' => TRUE,
+  );
+
+  return $tax_rates;
+}
+
+include_once('blaa_shop.features.inc');
