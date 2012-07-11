@@ -219,9 +219,14 @@ function blaa_showcase_views_default_views() {
 
   /* Display: Blok */
   $handler = $view->new_display('block', 'Blok', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Drupal showcase';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['use_more_text'] = 'Se flere show cases';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
@@ -250,6 +255,8 @@ function blaa_showcase_views_default_views() {
     t('Side (Danske)'),
     t('Side (Internationale)'),
     t('Blok'),
+    t('Drupal showcase'),
+    t('Se flere show cases'),
     t('Drupal Sites'),
   );
   $export['blaa_showcase'] = $view;
