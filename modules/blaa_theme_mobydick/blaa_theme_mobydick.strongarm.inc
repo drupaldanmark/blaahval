@@ -103,7 +103,7 @@ function blaa_theme_mobydick_strongarm() {
     'mothership_classes_form_container_id' => 0,
     'mothership_classes_form_wrapper_formitem' => 1,
     'mothership_classes_form_wrapper_formtype' => 0,
-    'mothership_classes_form_wrapper_formname' => 1,
+    'mothership_classes_form_wrapper_formname' => 0,
     'mothership_classes_form_freeform' => '',
     'mothership_classes_form_label' => 1,
     'mothership_classes_form_input' => 1,
