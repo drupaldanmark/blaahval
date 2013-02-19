@@ -206,6 +206,7 @@ function blaa_showcase_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 0,
+        'default_image' => 0,
         'file_directory' => 'showcase_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',

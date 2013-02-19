@@ -35,15 +35,15 @@ function blaa_articles_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-events-block' => array(
-          'module' => 'views',
-          'delta' => 'events-block',
-          'region' => 'sidebar_first',
-          'weight' => 0,
-        ),
         'views-blaa_showcase-block_1' => array(
           'module' => 'views',
           'delta' => 'blaa_showcase-block_1',
+          'region' => 'sidebar_first',
+          'weight' => 0,
+        ),
+        'views-events-block' => array(
+          'module' => 'views',
+          'delta' => 'events-block',
           'region' => 'sidebar_first',
           'weight' => 1,
         ),
