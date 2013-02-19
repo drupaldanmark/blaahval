@@ -30,7 +30,7 @@ function blaa_calendar_views_api() {
 function blaa_calendar_node_info() {
   $items = array(
     'event' => array(
-      'name' => t('Begivenhed/event'),
+      'name' => t('arrangementer'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

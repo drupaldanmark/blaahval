@@ -32,20 +32,11 @@ function blaa_theme_mobydick_default_box() {
   $box->api_version = 1;
   $box->delta = 'box-16bc37c8';
   $box->plugin_key = 'simple';
-  $box->title = '';
+  $box->title = 'Skab DIT Drupal Danmark! ';
   $box->description = 'Box description';
   $box->options = array(
     'body' => array(
-      'value' => '<h2> Drupal Danmark</h2>
-<p>content bla bla bla  i rawk a lods content bla bla bla  i rawk a lodscontent bla bla bla  i rawk a lodscontent bla bla bla  i rawk a lods </p>
-<h3>Nedlad den danske sprogpakke</h3>
-<p>
-<a href="#">download</a> pakken så alt kommer på dansk
-</p>
-<a href="#" class="cupid-green">Download Drupal 7.12</a>
-<p>
-DEn er ny og lækker og sån lige til at fyre op i se evt vores guide her 
-</p>',
+      'value' => 'Foreningen Drupal Danmark er medlemmernes forening. Hvad har du brug for som medlem? Hvad savner du? Lade os vide i forummet!',
       'format' => '3',
     ),
     'additional_classes' => 'rockstar',

@@ -22,7 +22,7 @@ function blaa_calendar_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Events';
+  $handler->display->display_options['title'] = 'Arrangementer';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -246,12 +246,25 @@ function blaa_calendar_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['use_more_text'] = 'Se "lokale" arrangementer';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Sidefod: Global: Tekstområde */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['empty'] = FALSE;
+  $handler->display->display_options['footer']['area']['content'] = '<a href="http://groups.drupal.org/events" target="_blank">Se alle internationale events</a>';
+  $handler->display->display_options['footer']['area']['format'] = '3';
+  $handler->display->display_options['footer']['area']['tokenize'] = 0;
   $translatables['blaa_events'] = array(
     t('Master'),
-    t('Events'),
+    t('Arrangementer'),
     t('more'),
     t('Udfør'),
     t('Gendan'),
@@ -267,6 +280,8 @@ function blaa_calendar_views_default_views() {
     t('Sted'),
     t('Feed'),
     t('Block'),
+    t('Se "lokale" arrangementer'),
+    t('<a href="http://groups.drupal.org/events" target="_blank">Se alle internationale events</a>'),
   );
   $export['blaa_events'] = $view;
 
