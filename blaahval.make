@@ -1,7 +1,7 @@
 ; Drupal core
 api = 2
 core = 7.x
-projects[] = drupal
+projects[drupal][version] = 7.19
 
 ; Contrib modules
 
@@ -15,7 +15,7 @@ projects[backup_migrate][subdir] = contrib
 projects[backup_migrate][version] = 2.4
 
 projects[boxes][subdir] = contrib
-projects[boxes][version] = 1.2
+projects[boxes][version] = 1.1
 
 projects[cache_actions][subdir] = contrib
 projects[cache_actions][version] = 2.0-alpha5
