@@ -96,7 +96,7 @@ projects[menu_block][subdir] = contrib
 projects[menu_block][version] = 2.3
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 1.1
+projects[pathauto][version] = 1.2
 
 projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-rc1
@@ -129,14 +129,13 @@ projects[xmlsitemap][subdir] = contrib
 projects[xmlsitemap][version] = 2.0-rc2
 
 ; Drupal Danmark theme
-projects[kaskelot][download][type] = "git"
-projects[kaskelot][download][url] = "https://github.com/drupaldanmark/kaskelot.git"
-projects[kaskelot][type] = "theme"
+projects[kaskelot][download][type] = git
+projects[kaskelot][download][url] = https://github.com/drupaldanmark/kaskelot.git
+projects[kaskelot][type] = theme
 
-projects[mobydick][download][type] = "git"
-projects[mobydick][download][url] = "https://github.com/drupaldanmark/mobydick.git"
-projects[mobydick][type] = "theme"
+projects[mobydick][download][type] = git
+projects[mobydick][download][url] = https://github.com/drupaldanmark/mobydick.git
+projects[mobydick][type] = theme
 
-projects[mothership][subdir] = "contrib"
-projects[mothership][version] = "2.x-dev"
-
+projects[mothership][subdir] = contrib
+projects[mothership][version] = 2.8
