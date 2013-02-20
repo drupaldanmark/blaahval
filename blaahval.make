@@ -1,7 +1,7 @@
 ; Drupal core
 api = 2
 core = 7.x
-projects[drupal][version] = 7.19
+projects[drupal][version] = 7.20
 
 ; Contrib modules
 
@@ -79,6 +79,9 @@ projects[job_scheduler][version] = 2.0-alpha2
 
 projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta2
+
+projects[libraries][subdir] = contrib
+projects[libraries][version] = 2.0
 
 projects[link][subdir] = contrib
 projects[link][version] = 1.1
