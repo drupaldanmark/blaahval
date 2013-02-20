@@ -71,9 +71,6 @@ projects[html5_tools][version] = 1.2
 projects[markdown][subdir] = contrib
 projects[markdown][version] = 1.1
 
-projects[memcache][subdir] = contrib
-projects[memcache][version] = 1.0-beta4
-
 projects[mollom][subdir] = contrib
 projects[mollom][version] = 1.1
 
@@ -100,6 +97,9 @@ projects[pathauto][version] = 1.2
 
 projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-rc1
+
+projects[redis][subdir] = contrib
+projects[redis][version] = 2.0-beta4
 
 projects[references][subdir] = contrib
 projects[references][version] = 2.1
@@ -139,3 +139,9 @@ projects[mobydick][type] = theme
 
 projects[mothership][subdir] = contrib
 projects[mothership][version] = 2.8
+
+; Libraries
+
+libraries[predis][download][type] = git
+libraries[predis][download][url] = https://github.com/nrk/predis.git
+libraries[predis][download][revision] = v0.8.0
