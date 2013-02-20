@@ -72,7 +72,7 @@ projects[markdown][subdir] = contrib
 projects[markdown][version] = 1.1
 
 projects[mollom][subdir] = contrib
-projects[mollom][version] = 1.1
+projects[mollom][version] = 2.4
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha2
