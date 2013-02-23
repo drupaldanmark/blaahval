@@ -27,7 +27,7 @@ projects[comment_notify][subdir] = contrib
 projects[comment_notify][version] = 1.1
 
 projects[commerce][subdir] = contrib
-projects[commerce][version] = 1.2
+projects[commerce][version] = 1.5
 
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta6
