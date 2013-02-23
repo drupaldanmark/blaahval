@@ -34,5 +34,11 @@ function blaa_members_user_default_roles() {
     'weight' => '1',
   );
 
+  // Exported role: medlem 2012
+  $roles['medlem 2013'] = array(
+    'name' => 'medlem 2013',
+    'weight' => '1',
+  );
+
   return $roles;
 }
