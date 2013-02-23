@@ -71,6 +71,9 @@ projects[html5_tools][version] = 1.2
 projects[markdown][subdir] = contrib
 projects[markdown][version] = 1.1
 
+projects[module_filter][subdir] = contrib
+projects[module_filter][version] = 1.7
+
 projects[mollom][subdir] = contrib
 projects[mollom][version] = 2.4
 
