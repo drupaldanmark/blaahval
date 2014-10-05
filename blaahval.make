@@ -111,7 +111,7 @@ projects[references][subdir] = contrib
 projects[references][version] = 2.1
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.7
+projects[rules][version] = 2.2
 
 projects[spamspan][subdir] = contrib
 projects[spamspan][version] = 1.1-beta1
