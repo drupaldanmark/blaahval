@@ -1,12 +1,12 @@
 ; Drupal core
 api = 2
 core = 7.x
-projects[drupal][version] = 7.31
+projects[drupal][version] = 7.37
 
 ; Contrib modules
 
 projects[addressfield][subdir] = contrib
-projects[addressfield][version] = 1.0-beta5
+projects[addressfield][version] = 1.1
 
 projects[auto_nodetitle][subdir] = contrib
 projects[auto_nodetitle][version] = 1.0
@@ -30,13 +30,13 @@ projects[commerce][subdir] = contrib
 projects[commerce][version] = 1.5
 
 projects[context][subdir] = contrib
-projects[context][version] = 3.3
+projects[context][version] = 3.6
 
 projects[context_inline_editor][subdir] = contrib
 projects[context_inline_editor][version] = 1.0-beta1
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.4
+projects[ctools][version] = 1.7
 
 projects[date][subdir] = contrib
 projects[date][version] = 2.8
@@ -51,10 +51,10 @@ projects[elements][subdir] = contrib
 projects[elements][version] = 1.4
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.5
+projects[entity][version] = 1.6
 
 projects[features][subdir] = contrib
-projects[features][version] = 2.2
+projects[features][version] = 2.5
 
 projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
@@ -63,7 +63,7 @@ projects[gravatar][subdir] = contrib
 projects[gravatar][version] = 1.1
 
 projects[google_analytics][subdir] = contrib
-projects[google_analytics][version] = 2.0
+projects[google_analytics][version] = 2.1
 
 projects[html5_tools][subdir] = contrib
 projects[html5_tools][version] = 1.2
@@ -75,7 +75,7 @@ projects[module_filter][subdir] = contrib
 projects[module_filter][version] = 1.7
 
 projects[mollom][subdir] = contrib
-projects[mollom][version] = 2.12
+projects[mollom][version] = 2.13
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha2
@@ -87,10 +87,10 @@ projects[libraries][subdir] = contrib
 projects[libraries][version] = 2.0
 
 projects[link][subdir] = contrib
-projects[link][version] = 1.2
+projects[link][version] = 1.3
 
 projects[logintoboggan][subdir] = contrib
-projects[logintoboggan][version] = 1.4
+projects[logintoboggan][version] = 1.5
 
 projects[memcache][subdir] = contrib
 projects[memcache][version] = 1.0
@@ -111,16 +111,16 @@ projects[references][subdir] = contrib
 projects[references][version] = 2.1
 
 projects[rules][subdir] = contrib
-projects[rules][version] = 2.2
+projects[rules][version] = 2.9
 
 projects[spamspan][subdir] = contrib
-projects[spamspan][version] = 1.1-beta1
+projects[spamspan][version] = 1.2
 
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.5
+projects[token][version] = 1.6
 
 projects[transliteration][subdir] = contrib
 projects[transliteration][version] = 3.2
@@ -129,10 +129,10 @@ projects[textile][subdir] = contrib
 projects[textile][version] = 2.0-rc9
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.8
+projects[views][version] = 3.11
 
 projects[xmlsitemap][subdir] = contrib
-projects[xmlsitemap][version] = 2.0
+projects[xmlsitemap][version] = 2.2
 
 ; Drupal Danmark theme
 projects[kaskelot][download][type] = git
