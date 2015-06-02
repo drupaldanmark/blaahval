@@ -103,8 +103,9 @@ projects[pathauto][version] = 1.2
 projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-rc1
 
-projects[redis][subdir] = contrib
-projects[redis][version] = 2.0-beta4
+projects[redis][version] = "3.3"
+; Small bugfix for https://www.drupal.org/node/2478447#comment-9868541
+projects[redis][patch][] = https://www.drupal.org/files/issues/redis-dont-redefine-PREDIS_BASE_PATH-2478447-1.patch
 
 projects[references][subdir] = contrib
 projects[references][version] = 2.1
@@ -149,4 +150,4 @@ projects[mothership][version] = 2.8
 
 libraries[predis][download][type] = git
 libraries[predis][download][url] = https://github.com/nrk/predis.git
-libraries[predis][download][revision] = v0.8.7
+libraries[predis][download][revision] = v1.0.1
