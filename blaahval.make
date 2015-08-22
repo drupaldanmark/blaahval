@@ -4,7 +4,7 @@ core = 7.x
 
 defaults[projects][subdir] = contrib
 
-projects[drupal][version] = 7.37
+projects[drupal][version] = 7.39
 
 ; Contrib modules
 
@@ -28,7 +28,7 @@ projects[context][version] = 3.6
 
 projects[context_inline_editor][version] = 1.0-beta1
 
-projects[ctools][version] = 1.7
+projects[ctools][version] = 1.9
 
 projects[date][version] = 2.8
 
@@ -40,7 +40,7 @@ projects[elements][version] = 1.4
 
 projects[entity][version] = 1.6
 
-projects[features][version] = 2.5
+projects[features][version] = 2.6
 
 projects[feeds][version] = 2.0-alpha4
 
@@ -54,7 +54,7 @@ projects[markdown][version] = 1.2
 
 projects[module_filter][version] = 1.7
 
-projects[mollom][version] = 2.13
+projects[mollom][version] = 2.14
 
 projects[job_scheduler][version] = 2.0-alpha2
 
@@ -72,7 +72,7 @@ projects[menu_block][version] = 2.3
 
 projects[pathauto][version] = 1.2
 
-projects[redirect][version] = 1.0-rc1
+projects[redirect][version] = 1.0-rc3
 
 projects[redis][version] = 2.0-beta4
 
