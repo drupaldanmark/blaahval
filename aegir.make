@@ -8,4 +8,4 @@ projects[blaahval][type] = profile
 projects[blaahval][download][type] = git
 projects[blaahval][download][url] = https://github.com/drupaldanmark/blaahval.git
 ; This should follow the version tagged on the repositiory.
-projects[blaahval][download][revision] = v2.0.11
+projects[blaahval][download][revision] = v2.0.12
