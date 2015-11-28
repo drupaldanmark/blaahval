@@ -5,7 +5,7 @@ core = 7.x
 ; Contrib modules
 
 projects[addressfield][subdir] = contrib
-projects[addressfield][version] = 1.1
+projects[addressfield][version] = 1.2
 
 projects[auto_nodetitle][subdir] = contrib
 projects[auto_nodetitle][version] = 1.0
@@ -38,7 +38,7 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.9
 
 projects[date][subdir] = contrib
-projects[date][version] = 2.8
+projects[date][version] = 2.9
 
 projects[diff][subdir] = contrib
 projects[diff][version] = 3.2
@@ -53,7 +53,7 @@ projects[entity][subdir] = contrib
 projects[entity][version] = 1.6
 
 projects[features][subdir] = contrib
-projects[features][version] = 2.6
+projects[features][version] = 2.7
 
 projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
@@ -65,7 +65,7 @@ projects[google_analytics][subdir] = contrib
 projects[google_analytics][version] = 2.1
 
 projects[html5_tools][subdir] = contrib
-projects[html5_tools][version] = 1.2
+projects[html5_tools][version] = 1.3
 
 projects[markdown][subdir] = contrib
 projects[markdown][version] = 1.2
@@ -74,7 +74,7 @@ projects[module_filter][subdir] = contrib
 projects[module_filter][version] = 1.7
 
 projects[mollom][subdir] = contrib
-projects[mollom][version] = 2.14
+projects[mollom][version] = 2.15
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha2
@@ -98,7 +98,7 @@ projects[menu_block][subdir] = contrib
 projects[menu_block][version] = 2.3
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 1.2
+projects[pathauto][version] = 1.3
 
 projects[redirect][subdir] = contrib
 projects[redirect][version] = 1.0-rc3
@@ -128,7 +128,7 @@ projects[textile][subdir] = contrib
 projects[textile][version] = 2.0-rc9
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.11
+projects[views][version] = 3.13
 
 projects[xmlsitemap][subdir] = contrib
 projects[xmlsitemap][version] = 2.2
